@@ -4,7 +4,7 @@ import Home from './home/Home';
 
 
 
-export default function Routes() {
+export default function HomeRoutes() {
   return (
     <div>
        <Routes>

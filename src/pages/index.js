@@ -2,7 +2,7 @@ import React from 'react'
 import TopNav from '../utilities/TopNav'
 import { Col, Container, Row } from 'reactstrap'
 import { FollowList, PostList } from '../components/MainComponents'
-import Routes from './Routes'
+import HomeRoutes from './HomeRoutes'
 
 export default function HomePages() {
   return (
@@ -19,7 +19,7 @@ export default function HomePages() {
         {/* main screen */}
         <Col md="" className='  p-1'>
           <div className='p-1 border rounded-2 h-100'>
-            <Routes/>
+            <HomeRoutes/>
           </div>
         </Col>
 
