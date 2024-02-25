@@ -44,12 +44,33 @@ $primary: #f7343f;
 @import "../../../node_modules/bootstrap/scss/utilities/api";
 
 // 8. Add additional custom code here
-.btn{
+
+.btn-outline-primary {
+    &:hover{
+        color: white !important;
+        }
+}
+
+.btn {
     transition: all .05s linear;
+
     &:active {
         transform: scale(0.9);
     }
 }
-.pe-pointer{
+
+.pe-pointer {
     cursor: pointer;
+}
+
+
+// font size extend 
+.fs-7{
+    font-size: .9rem;
+}
+.fs-8{
+    font-size: .8rem;
+}
+.fs-9{
+    font-size: .7rem;
 }

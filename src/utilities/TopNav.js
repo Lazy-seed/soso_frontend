@@ -6,7 +6,7 @@ import { Bell, ChevronDown } from 'react-feather'
 
 export default function TopNav() {
   return (
-    <div className='border p-2'>
+    <div className='border rounded-2  p-2'>
       <Row >
         <Col md="3" className=" d-flex  align-items-center gap-2">
           <img src={logo1} alt="" width={80} />
