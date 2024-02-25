@@ -3,6 +3,7 @@ import { Col, Row } from 'reactstrap'
 import logo1 from './images/logo1.png'
 import proflile from './images/proflile.png'
 import { Bell, ChevronDown } from 'react-feather'
+import { Link } from 'react-router-dom'
 
 export default function TopNav() {
   return (
@@ -36,9 +37,9 @@ export default function TopNav() {
                 <h5 className='fs-5 m-0 cursor-pointer  '>Lisa Manabon</h5>
               </div>
               <ul class="dropdown-menu  " >
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><Link to='/' class="dropdown-item" >Action</Link></li>
+                <li><Link to='/' class="dropdown-item" >Another action</Link></li>
+                <li><Link to='/' class="dropdown-item" >Something else here</Link></li>
               </ul>
             </div>
 
