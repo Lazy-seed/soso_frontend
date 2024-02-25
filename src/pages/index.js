@@ -1,12 +1,28 @@
 import React from 'react'
 import Home from './home/Home'
 import TopNav from '../utilities/TopNav'
+import { Col, Container, Row } from 'reactstrap'
 
 export default function HomePages() {
   return (
     <div>
-    <TopNav/>
-      <Home/>
+      <TopNav />
+      <Row className='mx-0' style={{minHeight:"400px"}}>
+
+        {/* left screen */}
+        <Col md="2" className='m-0 border'></Col>
+
+        {/* main screen */}
+        <Col md="" className='m-0 border border-danger'>
+        <Home />
+
+        </Col>
+
+        {/* right screen */}
+        <Col md="3" className='m-0 border'>
+
+        </Col>
+      </Row>
     </div>
   )
 }

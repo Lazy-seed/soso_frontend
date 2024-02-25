@@ -30,17 +30,18 @@ export default function TopNav() {
             <Bell />
           </div>
           <div className='d-flex justify-content-center align-items-center gap-3'>
-            <h5 className='fs-5 m-0 '>Lisa Manabon</h5>
             <div class="dropdown">
-              <div className='d-flex justify-content-center  align-items-center gap-3 ' data-bs-toggle="dropdown" aria-expanded="false">
+              <div className='d-flex justify-content-center  align-items-center gap-3 pe-pointer' data-bs-toggle="dropdown" aria-expanded="false">
                 <img src={proflile} width={50} alt="" />
+                <h5 className='fs-5 m-0 cursor-pointer  '>Lisa Manabon</h5>
               </div>
-              <ul class="dropdown-menu " >
+              <ul class="dropdown-menu  " >
                 <li><a class="dropdown-item" href="#">Action</a></li>
                 <li><a class="dropdown-item" href="#">Another action</a></li>
                 <li><a class="dropdown-item" href="#">Something else here</a></li>
               </ul>
             </div>
+
             <div>
 
             </div>
