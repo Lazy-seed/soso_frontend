@@ -1,7 +1,7 @@
 import React from 'react'
 import TopNav from '../utilities/TopNav'
 import { Col, Container, Row } from 'reactstrap'
-import { FollowList, PostList } from '../components/MainComponents'
+import { FollowList, MessageList, PostList } from '../components/MainComponents'
 import HomeRoutes from './HomeRoutes'
 
 export default function HomePages() {
@@ -12,14 +12,24 @@ export default function HomePages() {
 
         {/* left screen */}
         <Col md="2" className=' p-1 ps-0'>
-          <div className='p-1 border rounded-2 h-100'>
+          <div className='border rounded-2 p-3 py-3'>
+            <div className='d-flex justify-content-between align-items-center  px-2 mt-2 mb-2' >
+              <h6 className=''>Message</h6>
+              <h6 className='fs-8'>See All</h6>
+            </div>
+            <div className='d-flex flex-column gap-1'>
+              <MessageList />
+              <MessageList />
+              <MessageList />
+              <MessageList />
+            </div>
           </div>
         </Col>
 
         {/* main screen */}
         <Col md="" className='  p-1'>
           <div className='p-1 border rounded-2 h-100'>
-            <HomeRoutes/>
+            <HomeRoutes />
           </div>
         </Col>
 

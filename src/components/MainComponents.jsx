@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import proflile from './images/proflile.png'
 import post1 from './images/post1.png'
 
+
+// follow list 
 export const FollowList = () => {
     const [useIsFollow, setIsFollow] = useState(false)
     return (
@@ -25,6 +27,7 @@ export const FollowList = () => {
 }
 
 
+// post list 
 export const PostList = () => {
     // const [useIsFollow, setIsFollow] = useState(false)
     return (
@@ -42,6 +45,23 @@ export const PostList = () => {
                 </div>
             </div>
 
+        </div>
+    )
+}
+
+// message list 
+export const MessageList = () => {
+    return (
+        <div className='d-flex justify-content-between   align-items-center p-1 '>
+            <div className='d-flex justify-content-start gap-2 align-items-center '>
+
+                <img src={proflile} width={50} alt="" />
+                <div>
+                    <h5 className='fs-6 m-0  fw-'>Lisa Manabon</h5>
+                    <p className='fs-7 text-secondary mb-0'>where r u?</p>
+                </div>
+            </div>
+           
         </div>
     )
 }
